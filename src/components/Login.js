@@ -18,7 +18,9 @@ const Login = () => {
     const message = checkValidData(email.current.value, password.current.value);
     setErrorMessage(message);
 
-    // Sign In/Sign Up
+    if (message) return;
+
+    // Sign In Sign Up Logic
   };
 
   return (
